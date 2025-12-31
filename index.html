@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering + Python Master Schedule</title>
+    <style>
+        @media print {
+            @page { margin: 1cm; }
+            body { margin: 0; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #6B46C1;
+            border-bottom: 3px solid #6B46C1;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #6B46C1;
+            margin-top: 30px;
+            border-left: 5px solid #F59E0B;
+            padding-left: 10px;
+        }
+        
+        .print-btn {
+            background: #6B46C1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .print-btn:hover {
+            background: #553C9A;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 2px solid #E5E7EB;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #6B46C1;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .time-col { width: 25%; font-weight: bold; }
+        .activity-col { width: 75%; }
+        
+        .python-row {
+            background: #FEF3C7;
+            font-weight: bold;
+        }
+        
+        .study-row { background: #DBEAFE; }
+        .break-row { background: #D1FAE5; }
+        .sleep-row { background: #F3F4F6; }
+        .class-row { background: #E9D5FF; }
+        
+        .tips-box {
+            background: #FEF3C7;
+            border: 2px solid #F59E0B;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .roadmap-box {
+            background: #DBEAFE;
+            border: 2px solid #3B82F6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .week-card {
+            border: 2px solid #F59E0B;
+            padding: 12px;
+            background: #FEF3C7;
+            border-radius: 5px;
+        }
+        
+        .week-card h4 {
+            margin: 0 0 8px 0;
+            color: #92400E;
+        }
+        
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Click Here to Print/Save as PDF</button>
+    
+    <h1>🎯 Engineering Student Master Schedule<br>Semester 2 C-Cycle + Python Learning</h1>
+    
+    <div style="text-align: center; margin: 20px 0; font-size: 14px; color: #666;">
+        <strong>Goal: 9+ CGPA in C-Cycle + Master Python in 90 Days</strong>
+    </div>
+
+    <h2>📅 WEEKDAY SCHEDULE (Monday - Friday)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="time-col">Time</th>
+                <th class="activity-col">Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="break-row">
+                <td>6:00 AM - 7:00 AM</td>
+                <td>☀️ Wake up, Morning Routine, Light Exercise/Walk</td>
+            </tr>
+            <tr class="study-row">
+                <td>7:00 AM - 8:00 AM</td>
+                <td>🍳 Breakfast + Quick Review of Previous Day's Notes (30 min)</td>
+            </tr>
+            <tr class="class-row">
+                <td>8:00 AM - 1:00 PM</td>
+                <td>🎓 <strong>COLLEGE CLASSES</strong> - Attend all lectures, take detailed notes</td>
+            </tr>
+            <tr class="break-row">
+                <td>1:00 PM - 2:00 PM</td>
+                <td>🍽️ Lunch Break + Relaxation</td>
+            </tr>
+            <tr class="study-row">
+                <td>2:00 PM - 4:00 PM</td>
+                <td>📚 Labs/Tutorials OR Review today's lectures + Complete assignments</td>
+            </tr>
+            <tr class="break-row">
+                <td>4:00 PM - 5:00 PM</td>
+                <td>☕ Break Time (Tea, Snacks, Rest)</td>
+            </tr>
+            <tr class="python-row">
+                <td>5:00 PM - 6:30 PM</td>
+                <td>🐍 <strong>PYTHON LEARNING SESSION (1.5 hours)</strong><br>Follow daily Python plan below</td>
+            </tr>
+            <tr class="break-row">
+                <td>6:30 PM - 7:30 PM</td>
+                <td>🍽️ Evening Routine + Dinner</td>
+            </tr>
+            <tr class="study-row">
+                <td>7:30 PM - 9:30 PM</td>
+                <td>📖 <strong>Engineering Deep Study (2 hours)</strong><br>• Mathematics: 1 hour<br>• Other subjects: 1 hour<br>• Solve problems, practice numericals</td>
+            </tr>
+            <tr class="study-row">
+                <td>9:30 PM - 10:30 PM</td>
+                <td>📝 Revision + Planning<br>• Revise today's topics (30 min)<br>• Plan tomorrow (15 min)<br>• Light reading (15 min)</td>
+            </tr>
+            <tr class="sleep-row">
+                <td>10:30 PM - 11:00 PM</td>
+                <td>🌙 Wind Down, Prepare for Bed</td>
+            </tr>
+            <tr class="sleep-row">
+                <td>11:00 PM - 6:00 AM</td>
+                <td>😴 <strong>SLEEP (7 hours minimum)</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>🎉 WEEKEND SCHEDULE (Saturday & Sunday)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="time-col">Time</th>
+                <th class="activity-col">Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="break-row">
+                <td>6:00 AM - 8:00 AM</td>
+                <td>☀️ Wake up, Exercise, Breakfast</td>
+            </tr>
+            <tr class="python-row">
+                <td>8:00 AM - 10:00 AM</td>
+                <td>🐍 <strong>PYTHON EXTENDED SESSION (2 hours)</strong><br>Work on bigger projects, watch tutorials, build applications</td>
+            </tr>
+            <tr class="study-row">
+                <td>10:00 AM - 12:00 PM</td>
+                <td>📚 <strong>Engineering Subject 1 (Weakest Subject)</strong><br>Deep concept understanding, solve difficult problems</td>
+            </tr>
+            <tr class="break-row">
+                <td>12:00 PM - 1:00 PM</td>
+                <td>🍽️ Lunch + Break</td>
+            </tr>
+            <tr class="study-row">
+                <td>1:00 PM - 3:00 PM</td>
+                <td>📚 <strong>Engineering Subject 2</strong><br>Complete pending assignments, practice previous year questions</td>
+            </tr>
+            <tr class="break-row">
+                <td>3:00 PM - 4:00 PM</td>
+                <td>☕ Break Time</td>
+            </tr>
+            <tr class="python-row">
+                <td>4:00 PM - 6:00 PM</td>
+                <td>🐍 <strong>PYTHON PROJECT TIME (2 hours)</strong><br>Build real projects, solve coding challenges, contribute to platforms</td>
+            </tr>
+            <tr class="break-row">
+                <td>6:00 PM - 7:00 PM</td>
+                <td>🍽️ Dinner</td>
+            </tr>
+            <tr class="study-row">
+                <td>7:00 PM - 9:00 PM</td>
+                <td>📝 <strong>Weekly Revision (2 hours)</strong><br>Review entire week's engineering topics, make summary notes</td>
+            </tr>
+            <tr class="break-row">
+                <td>9:00 PM onwards</td>
+                <td>🎮 Free Time, Hobbies, Relax, Social Time</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>🐍 PYTHON WEEKLY LEARNING PLAN</h2>
+    <div class="week-grid">
+        <div class="week-card">
+            <h4>Monday</h4>
+            <strong>📖 Learn New Concepts</strong>
+            <p>30 min theory + 45 min coding + 15 min notes</p>
+        </div>
+        <div class="week-card">
+            <h4>Tuesday</h4>
+            <strong>💻 Practice Problems</strong>
+            <p>45 min HackerRank/LeetCode + 45 min mini projects</p>
+        </div>
+        <div class="week-card">
+            <h4>Wednesday</h4>
+            <strong>📖 Learn New Concepts</strong>
+            <p>30 min theory + 45 min coding + 15 min notes</p>
+        </div>
+        <div class="week-card">
+            <h4>Thursday</h4>
+            <strong>💻 Practice Problems</strong>
+            <p>45 min problem solving + 45 min apply learning</p>
+        </div>
+        <div class="week-card">
+            <h4>Friday</h4>
+            <strong>📖 Learn New Concepts</strong>
+            <p>30 min theory + 45 min coding + 15 min notes</p>
+        </div>
+        <div class="week-card">
+            <h4>Saturday</h4>
+            <strong>🚀 Project Work</strong>
+            <p>4 hours total on bigger projects</p>
+        </div>
+        <div class="week-card">
+            <h4>Sunday</h4>
+            <strong>🚀 Project Work</strong>
+            <p>4 hours combining multiple concepts</p>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>🚀 90-DAY PYTHON LEARNING ROADMAP</h2>
+    
+    <div class="roadmap-box">
+        <h3 style="margin-top: 0;">MONTH 1 (Days 1-30): Python Basics</h3>
+        <strong>Week 1-2: Fundamentals</strong>
+        <ul>
+            <li>Day 1-3: Installation, variables, data types, input/output</li>
+            <li>Day 4-7: Operators, conditionals (if-else), loops (for, while)</li>
+            <li>Day 8-10: Lists, tuples, dictionaries, sets</li>
+            <li>Day 11-14: Functions, scope, modules</li>
+        </ul>
+        <strong>Week 3-4: Intermediate Basics</strong>
+        <ul>
+            <li>Day 15-18: String manipulation, list comprehensions</li>
+            <li>Day 19-22: File handling (reading/writing files)</li>
+            <li>Day 23-26: Exception handling, debugging</li>
+            <li>Day 27-30: <strong>Mini Project - Calculator or To-Do List App</strong></li>
+        </ul>
+    </div>
+
+    <div class="roadmap-box">
+        <h3 style="margin-top: 0;">MONTH 2 (Days 31-60): Intermediate Python</h3>
+        <strong>Week 5-6: OOP & Data Structures</strong>
+        <ul>
+            <li>Day 31-37: Object-Oriented Programming (classes, objects, inheritance)</li>
+            <li>Day 38-44: Advanced data structures, algorithms basics</li>
+        </ul>
+        <strong>Week 7-8: Practical Skills</strong>
+        <ul>
+            <li>Day 45-51: Working with libraries (NumPy basics, Pandas basics)</li>
+            <li>Day 52-56: Web scraping with BeautifulSoup</li>
+            <li>Day 57-60: <strong>Project - Web Scraper or Data Analyzer</strong></li>
+        </ul>
+    </div>
+
+    <div class="roadmap-box">
+        <h3 style="margin-top: 0;">MONTH 3 (Days 61-90): Advanced & Projects</h3>
+        <strong>Week 9-10: Specialized Topics</strong>
+        <ul>
+            <li>Day 61-67: APIs, JSON, working with external data</li>
+            <li>Day 68-74: Database basics (SQLite with Python)</li>
+        </ul>
+        <strong>Week 11-12: Final Projects</strong>
+        <ul>
+            <li>Day 75-82: Build a substantial project (expense tracker, weather app, etc.)</li>
+            <li>Day 83-90: <strong>Refine projects, create portfolio, competitive programming</strong></li>
+        </ul>
+    </div>
+
+    <div class="tips-box">
+        <h3 style="margin-top: 0;">⚡ SUCCESS TIPS FOR 9+ CGPA</h3>
+        <ul>
+            <li>✅ <strong>Attend 100% classes</strong> - This is non-negotiable</li>
+            <li>✅ <strong>Same-day revision</strong> - Review lecture notes within 24 hours</li>
+            <li>✅ <strong>Consistency over intensity</strong> - Daily 1.5 hrs Python better than weekend cramming</li>
+            <li>✅ <strong>Solve problems daily</strong> - Don't just read theory</li>
+            <li>✅ <strong>Maintain GitHub</strong> - Track all your Python code</li>
+            <li>✅ <strong>Previous year papers</strong> - Solve 5-7 papers per subject before exams</li>
+            <li>✅ <strong>Balance is key</strong> - 2 weeks before exams, reduce Python to 30 min/day</li>
+            <li>✅ <strong>Sleep 7 hours</strong> - Don't sacrifice health for studies</li>
+            <li>✅ <strong>Weekly revision</strong> - Every Sunday, review the entire week</li>
+            <li>✅ <strong>Never skip Python practice</strong> - Even busy days, minimum 30 minutes</li>
+        </ul>
+    </div>
+
+    <div class="tips-box" style="background: #E0E7FF; border-color: #6366F1;">
+        <h3 style="margin-top: 0;">📚 LEARNING RESOURCES</h3>
+        <strong>Python Resources:</strong>
+        <ul>
+            <li>Official Tutorial: python.org</li>
+            <li>YouTube: Corey Schafer, Programming with Mosh</li>
+            <li>Practice: HackerRank Python track, LeetCode Easy problems</li>
+            <li>Quick coding: Replit.com</li>
+        </ul>
+        <strong>Engineering Study:</strong>
+        <ul>
+            <li>Your class notes and textbooks (most important!)</li>
+            <li>Previous year question papers</li>
+            <li>Reference books recommended by professors</li>
+            <li>YouTube for concept clarification (when stuck)</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0; padding: 20px; background: #F3F4F6; border-radius: 5px;">
+        <h3 style="color: #6B46C1;">Weekly Time Distribution</h3>
+        <p><strong>Engineering Studies:</strong> 24.5 hours/week</p>
+        <p><strong>Python Learning:</strong> 11.5 hours/week</p>
+        <p><strong>Classes:</strong> 25 hours/week</p>
+        <p><strong>Total Study Time:</strong> 61 hours/week</p>
+        <p style="margin-top: 15px; color: #059669; font-weight: bold;">You've got this! Stay consistent and trust the process! 💪</p>
+    </div>
+
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Click Here to Print/Save as PDF</button>
+</body>
+</html>
